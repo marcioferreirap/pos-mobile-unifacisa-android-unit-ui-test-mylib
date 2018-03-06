@@ -14,7 +14,10 @@
         android:layout_marginTop="8dp"
         android:text="Register Student"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true"
+        android:focusable="auto"
+        android:onClick="btnRegisterStudentPressed"/>
 
     <Button
         android:id="@+id/btn_reg_book"
@@ -24,7 +27,10 @@
         android:layout_marginTop="8dp"
         android:text="Register Book"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_reg_student" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg_student"
+        tools:clickable="true"
+        android:focusable="auto"
+        android:onClick="btnRegisterBookPressed"/>
 
     <Button
         android:id="@+id/btn_calc_fine"
@@ -34,16 +40,22 @@
         android:layout_marginTop="8dp"
         android:text="Fine Calculate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_reg_book" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg_book"
+        tools:clickable="true"
+        android:focusable="auto"
+        android:onClick="btnCalcPressed"/>
 
     <Button
-        android:id="@+id/quit"
+        android:id="@+id/btn_quit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:focusable="auto"
+        android:onClick="btnQuitPressed"
         android:text="Quit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calc_fine" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_calc_fine"
+        tools:clickable="true" />
 
 </android.support.constraint.ConstraintLayout>
